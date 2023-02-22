@@ -80,7 +80,7 @@ int main() {
   fptr = fopen("input.txt", "r");
   fptr2 = fopen("input2.txt", "r");
   if (!fptr || !fptr2) {
-    printf("Can't open the file\n");
+    printf("Can't open \n");
   } else {
     int i = 0;
 
@@ -101,15 +101,15 @@ int main() {
     for (int i = 0; i < N; i++) {
       printf("%c", input_arr[i]);
     }
-    printf("Please state the correct name of figure.\n"); // ошибка об имени
+    printf("Please state the correct name of figure.\n"); 
 
   } else {
     if (counter_2 > 0) {
       for (int i = 0; i < N; i++) {
         printf("%c", input_arr[i]);
       }
-      printf("Please state the correct parameters.\n"); // ошибка о параметрах
-                                                        // фигуры
+      printf("Please state the correct parameters.\n"); 
+                                                        
     } else {
       for (int i = 0; i < N; i++) {
         if ((input_arr[i] == ',') && (input_arr[i + 1] == ' ')) {
@@ -142,15 +142,14 @@ int main() {
     for (int i = 0; i < N; i++) {
       printf("%c", input_arr2[i]);
     }
-    printf("Please state the correct name of figure.\n"); // ошибка об имени
+    printf("Please state the correct name of figure.\n"); 
 
   } else {
     if (counter_4 > 0) {
       for (int i = 0; i < N; i++) {
         printf("%c", input_arr2[i]);
       }
-      printf("Please state the correct parameters.\n"); // ошибка о параметрах
-                                                        // фигуры
+      printf("Error.\n"); 
     } else {
       for (int i = 0; i < N; i++) {
         if ((input_arr2[i] == ',') && (input_arr2[i + 1] == ' ')) {
